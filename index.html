@@ -1,0 +1,2350 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tselios Κουρείο (Free Menstyle) — Κουρείο &amp; Ραντεβού στην Κατερίνη</title>
+  <meta name="description" content="Tselios Κουρείο (Free Menstyle) στη Νέα Μαραθώνος 4, Αγία Παρασκευή, Κατερίνη. Ανδρικό κούρεμα 10 €, παραδοσιακό ξύρισμα 10 €, ξύρισμα γενειάδας με μηχανή 5 €. Κλείστε ραντεβού online." />
+  <meta property="og:title" content="Tselios Κουρείο (Free Menstyle) — Κατερίνη" />
+  <meta property="og:description" content="Περιποίηση και κούρεμα χωρίς αναμονή στην Αγία Παρασκευή Κατερίνης. Κλείστε ημερομηνία και ώρα online ή στο 695 533 0482." />
+  <meta property="og:locale" content="el_GR" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-dark: #0f1012;
+      --bg-surface: #17191d;
+      --bg-card: #1e2127;
+      --bg-elevated: #252931;
+      --border: rgba(200, 155, 84, 0.22);
+      --border-soft: rgba(255, 255, 255, 0.08);
+      --gold: #c89b54;
+      --gold-light: #e2be81;
+      --gold-dim: rgba(200, 155, 84, 0.14);
+      --crimson: #9f3535;
+      --navy: #274469;
+      --text-main: #f4f0e8;
+      --text-muted: #aba59b;
+      --text-dim: #7b756c;
+      --success: #45a36b;
+      --success-bg: rgba(69, 163, 107, 0.14);
+      --danger: #d95d5d;
+      --danger-bg: rgba(217, 93, 93, 0.14);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --shadow: 0 22px 50px rgba(0, 0, 0, 0.45);
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, textarea, select {
+      font-family: inherit;
+    }
+
+    section {
+      scroll-margin-top: 84px;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: 0 auto;
+    }
+
+    .barber-ribbon {
+      height: 4px;
+      width: 100%;
+      background: repeating-linear-gradient(
+        115deg,
+        var(--crimson) 0 18px,
+        #eae5dc 18px 34px,
+        var(--navy) 34px 52px,
+        #eae5dc 52px 68px
+      );
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15, 16, 18, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--gold);
+      background: var(--gold-dim);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+      color: var(--text-main);
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 0.75rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--gold-light);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.85rem 1.45rem;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.92rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: transform 0.18s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:focus-visible {
+      outline: 2px solid var(--gold-light);
+      outline-offset: 2px;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: #111214;
+      box-shadow: 0 8px 24px rgba(200, 155, 84, 0.22);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text-main);
+      border-color: var(--border);
+    }
+
+    .btn-outline:hover {
+      background: var(--gold-dim);
+      border-color: var(--gold);
+    }
+
+    .btn-sm {
+      padding: 0.58rem 1rem;
+      font-size: 0.85rem;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      color: var(--text-main);
+      border-radius: var(--radius-sm);
+      padding: 0.5rem 0.7rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      padding: clamp(3.5rem, 7vw, 6.2rem) 0 clamp(3rem, 5vw, 4.5rem);
+      background:
+        radial-gradient(circle at 82% 18%, rgba(200, 155, 84, 0.12), transparent 44%),
+        radial-gradient(circle at 12% 75%, rgba(39, 68, 105, 0.14), transparent 42%),
+        var(--bg-dark);
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.85fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.42rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--border-soft);
+      background: var(--bg-card);
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--text-muted);
+    }
+
+    .status-pill.is-open {
+      background: var(--success-bg);
+      border-color: rgba(69, 163, 107, 0.35);
+      color: #8ee0ad;
+    }
+
+    .status-pill.is-open .status-dot {
+      background: var(--success);
+      box-shadow: 0 0 0 4px rgba(69, 163, 107, 0.22);
+    }
+
+    .status-pill.is-closed {
+      background: var(--danger-bg);
+      border-color: rgba(217, 93, 93, 0.32);
+      color: #f3a6a6;
+    }
+
+    .status-pill.is-closed .status-dot {
+      background: var(--danger);
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.45rem, 4.8vw, 4rem);
+      line-height: 1.07;
+      font-weight: 700;
+      margin-bottom: 1.15rem;
+      color: var(--text-main);
+    }
+
+    .hero h1 em {
+      color: var(--gold-light);
+      font-style: italic;
+    }
+
+    .hero-lead {
+      font-size: 1.06rem;
+      color: var(--text-muted);
+      max-width: 58ch;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-soft);
+    }
+
+    .meta-item strong {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--gold-light);
+    }
+
+    .meta-item span {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .hero-card {
+      background: linear-gradient(160deg, var(--bg-card), var(--bg-surface));
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .offer-badge {
+      display: inline-block;
+      background: var(--gold-dim);
+      color: var(--gold-light);
+      border: 1px solid var(--border);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-card h2 {
+      font-family: var(--font-display);
+      font-size: 1.9rem;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-card p {
+      font-size: 0.94rem;
+      color: var(--text-muted);
+      margin-bottom: 1.3rem;
+    }
+
+    .quick-details {
+      list-style: none;
+      display: grid;
+      gap: 0.7rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.92rem;
+    }
+
+    .quick-details li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px dashed var(--border-soft);
+    }
+
+    .quick-details li span:first-child {
+      color: var(--text-muted);
+    }
+
+    .section {
+      padding: clamp(3.2rem, 6vw, 5rem) 0;
+    }
+
+    .section-alt {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-soft);
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .section-header {
+      max-width: 680px;
+      margin-bottom: 2.35rem;
+    }
+
+    .section-kicker {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.45rem;
+    }
+
+    .section-header h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.6vw, 2.85rem);
+      line-height: 1.12;
+      margin-bottom: 0.65rem;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 1.55rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .service-card:hover {
+      border-color: var(--border);
+      transform: translateY(-2px);
+    }
+
+    .service-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.8rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.12rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .service-price {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .service-tag {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      background: var(--gold-dim);
+      padding: 0.22rem 0.55rem;
+      border-radius: 999px;
+      margin-bottom: 0.65rem;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .booking-shell {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 1.75rem;
+      align-items: start;
+    }
+
+    .booking-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+    }
+
+    .step-title {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .step-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: #111214;
+      font-size: 0.82rem;
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .service-options {
+      display: grid;
+      gap: 0.65rem;
+      margin-bottom: 1.35rem;
+    }
+
+    .radio-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-soft);
+      background: var(--bg-elevated);
+      cursor: pointer;
+      transition: border-color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .radio-card:has(input:checked) {
+      border-color: var(--gold);
+      background: var(--gold-dim);
+    }
+
+    .radio-card-left {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+    }
+
+    .radio-card input {
+      margin-top: 0.25rem;
+      accent-color: var(--gold);
+    }
+
+    .radio-card small {
+      display: block;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    .radio-price {
+      font-weight: 800;
+      color: var(--gold-light);
+      white-space: nowrap;
+    }
+
+    .extras-group {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.65rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .check-pill {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0.72rem 0.9rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-soft);
+      background: var(--bg-elevated);
+      cursor: pointer;
+      font-size: 0.88rem;
+    }
+
+    .check-pill:has(input:checked) {
+      border-color: var(--gold);
+      background: var(--gold-dim);
+    }
+
+    .check-pill input {
+      accent-color: var(--gold);
+    }
+
+    .schedule-switch {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      padding: 0.75rem 0.95rem;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-sm);
+      margin-bottom: 1.15rem;
+      font-size: 0.85rem;
+    }
+
+    .season-btns {
+      display: inline-flex;
+      background: var(--bg-dark);
+      padding: 3px;
+      border-radius: 6px;
+      border: 1px solid var(--border-soft);
+    }
+
+    .season-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      padding: 0.35rem 0.7rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .season-btn.active {
+      background: var(--gold);
+      color: #111214;
+    }
+
+    .calendar-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      margin-bottom: 1.35rem;
+    }
+
+    .calendar-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.85rem;
+    }
+
+    .calendar-nav h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+
+    .cal-arrow {
+      width: 34px;
+      height: 34px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-soft);
+      background: var(--bg-card);
+      color: var(--text-main);
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .cal-arrow:hover:not(:disabled) {
+      border-color: var(--gold);
+    }
+
+    .cal-arrow:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    .calendar-weekdays,
+    .calendar-days {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 0.35rem;
+      text-align: center;
+    }
+
+    .calendar-weekdays span {
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--text-dim);
+      padding-bottom: 0.35rem;
+    }
+
+    .cal-day {
+      aspect-ratio: 1 / 1;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .cal-day:hover:not(:disabled) {
+      border-color: var(--gold);
+    }
+
+    .cal-day.is-selected {
+      background: var(--gold);
+      color: #111214;
+      font-weight: 800;
+    }
+
+    .cal-day.is-today:not(.is-selected) {
+      border-color: rgba(200, 155, 84, 0.55);
+    }
+
+    .cal-day:disabled {
+      background: transparent;
+      color: var(--text-dim);
+      opacity: 0.42;
+      cursor: not-allowed;
+    }
+
+    .cal-day-empty {
+      visibility: hidden;
+    }
+
+    .slots-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .slot-btn {
+      padding: 0.58rem 0.4rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-soft);
+      background: var(--bg-elevated);
+      color: var(--text-main);
+      font-size: 0.86rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .slot-btn:hover:not(:disabled) {
+      border-color: var(--gold);
+    }
+
+    .slot-btn.is-selected {
+      background: var(--gold);
+      color: #111214;
+      border-color: var(--gold);
+      font-weight: 800;
+    }
+
+    .slot-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+      text-decoration: line-through;
+    }
+
+    .slot-group-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin: 0.8rem 0 0.45rem;
+    }
+
+    .form-field {
+      margin-bottom: 1rem;
+    }
+
+    .form-field label {
+      display: block;
+      font-size: 0.86rem;
+      font-weight: 600;
+      margin-bottom: 0.38rem;
+    }
+
+    .form-field input,
+    .form-field textarea {
+      width: 100%;
+      padding: 0.78rem 0.95rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-soft);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      font-size: 0.94rem;
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+
+    .summary-strip {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.15rem;
+      margin-bottom: 1.15rem;
+      font-size: 0.9rem;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.8rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .summary-row.total {
+      margin-top: 0.6rem;
+      padding-top: 0.6rem;
+      border-top: 1px solid var(--border-soft);
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--gold-light);
+      margin-bottom: 0;
+    }
+
+    .consent-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      cursor: pointer;
+    }
+
+    .consent-label input {
+      margin-top: 0.25rem;
+      accent-color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .link-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      color: var(--gold-light);
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: inherit;
+    }
+
+    .form-error {
+      background: var(--danger-bg);
+      border: 1px solid rgba(217, 93, 93, 0.4);
+      color: #ffb8b8;
+      padding: 0.75rem 0.95rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.86rem;
+      margin-bottom: 1rem;
+      display: none;
+    }
+
+    .form-error.visible {
+      display: block;
+    }
+
+    .confirmation-box {
+      display: none;
+      margin-top: 1.25rem;
+      background: var(--success-bg);
+      border: 1px solid rgba(69, 163, 107, 0.45);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+    }
+
+    .confirmation-box.visible {
+      display: block;
+    }
+
+    .confirmation-box.is-fallback {
+      background: var(--gold-dim);
+      border-color: var(--border);
+    }
+
+    .confirmation-box h3 {
+      font-size: 1.08rem;
+      color: #9be8ba;
+      margin-bottom: 0.5rem;
+    }
+
+    .confirmation-box.is-fallback h3 {
+      color: var(--gold-light);
+    }
+
+    .confirmation-box p {
+      font-size: 0.88rem;
+      color: var(--text-main);
+      margin-bottom: 0.95rem;
+    }
+
+    .confirm-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .hours-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+
+    .hours-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+    }
+
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.94rem;
+    }
+
+    .hours-table tr {
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .hours-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .hours-table th {
+      text-align: left;
+      padding: 0.82rem 0.4rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .hours-table td {
+      text-align: right;
+      padding: 0.82rem 0.4rem;
+      color: var(--text-muted);
+    }
+
+    .hours-table tr.is-today th,
+    .hours-table tr.is-today td {
+      color: var(--gold-light);
+    }
+
+    .hours-note {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border-left: 3px solid var(--gold);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.1rem;
+    }
+
+    .gallery-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gallery-visual {
+      aspect-ratio: 4 / 3;
+      background: linear-gradient(145deg, #1b1e24, #121418);
+      border-bottom: 1px solid var(--border-soft);
+      display: grid;
+      place-items: center;
+      padding: 1.25rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gallery-visual svg {
+      position: relative;
+      z-index: 1;
+    }
+
+    .gallery-visual img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 2;
+    }
+
+    .gallery-caption {
+      padding: 0.9rem 1rem;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .gallery-caption strong {
+      display: block;
+      color: var(--text-main);
+      margin-bottom: 0.2rem;
+      font-size: 0.92rem;
+    }
+
+    .gallery-cta {
+      margin-top: 1.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.15rem 1.4rem;
+      border-radius: var(--radius-md);
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+    }
+
+    .gallery-cta p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 1.55rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stars {
+      color: var(--gold-light);
+      letter-spacing: 0.08em;
+      font-size: 0.96rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .review-card p {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+    }
+
+    .review-source {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .contact-list li {
+      padding-bottom: 0.9rem;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .contact-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .contact-label {
+      display: block;
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--gold);
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .contact-sub {
+      display: block;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    .map-frame-wrap {
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 360px;
+    }
+
+    .map-frame-wrap iframe {
+      width: 100%;
+      flex: 1;
+      min-height: 290px;
+      border: 0;
+      filter: grayscale(20%) contrast(1.04);
+    }
+
+    .map-bar {
+      padding: 0.9rem 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      border-top: 1px solid var(--border-soft);
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .site-footer {
+      padding: 2rem 0;
+      border-top: 1px solid var(--border-soft);
+      background: #0b0c0e;
+      font-size: 0.86rem;
+      color: var(--text-dim);
+    }
+
+    .footer-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+    }
+
+    .footer-links a:hover,
+    .footer-links button:hover {
+      color: var(--gold-light);
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.72);
+      backdrop-filter: blur(4px);
+      display: none;
+      place-items: center;
+      padding: 1rem;
+      z-index: 200;
+    }
+
+    .modal-backdrop.open {
+      display: grid;
+    }
+
+    .modal-dialog {
+      width: min(640px, 100%);
+      max-height: 85vh;
+      overflow-y: auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow);
+    }
+
+    .modal-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .modal-head h3 {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+    }
+
+    .modal-close {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-soft);
+      color: var(--text-main);
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .modal-dialog p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 0.85rem;
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid,
+      .booking-shell,
+      .hours-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid,
+      .reviews-grid,
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        background: var(--bg-surface);
+        border-bottom: 1px solid var(--border-soft);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem 4%;
+        gap: 0.85rem;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .services-grid,
+      .reviews-grid,
+      .extras-group,
+      .hero-meta {
+        grid-template-columns: 1fr;
+      }
+
+      .slots-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="barber-ribbon" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e2be81" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+            <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+            <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Tselios Κουρείο</strong>
+          <span>Free Menstyle · Κατερίνη</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        Μενού ☰
+      </button>
+
+      <nav aria-label="Κύρια Πλοήγηση">
+        <ul class="nav-links" id="primaryNav">
+          <li><a href="#services">Υπηρεσίες</a></li>
+          <li><a href="#hours">Ωράριο</a></li>
+          <li><a href="#gallery">Φωτογραφίες</a></li>
+          <li><a href="#reviews">Κριτικές</a></li>
+          <li><a href="#contact">Επικοινωνία</a></li>
+          <li><a href="#booking" class="btn btn-primary btn-sm">Κλείσε Ραντεβού</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="status-pill" id="liveStatusPill" aria-live="polite">
+            <span class="status-dot"></span>
+            <span id="liveStatusText">Έλεγχος ωραρίου Κατερίνης...</span>
+          </div>
+
+          <h1>Κλασική Φροντίδα &amp; <em>Ανδρικό Στυλ</em> στην Κατερίνη</h1>
+          <p class="hero-lead">
+            Στο <strong>Tselios Κουρείο (Free Menstyle)</strong>, στην καρδιά της Αγίας Παρασκευής, η περιποίηση γίνεται με προσοχή στη λεπτομέρεια, προσιτές τιμές και εξυπηρέτηση <strong>με ραντεβού χωρίς αναμονή</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-primary">Κλείσε Ημερομηνία &amp; Ώρα</a>
+            <a href="tel:+306955330482" class="btn btn-outline">Κάλεσε 695 533 0482</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <strong>10 €</strong>
+              <span>Ανδρικό κούρεμα &amp; ξύρισμα</span>
+            </div>
+            <div class="meta-item">
+              <strong>5.0 ★</strong>
+              <span>Βαθμολογία καταλόγου Cybo</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Στοιχεία Άμεσης Εξυπηρέτησης">
+          <span class="offer-badge">Περιοχή Ι.Ν. Αγίας Παρασκευής</span>
+          <h2>Ραντεβού Χωρίς Αναμονή</h2>
+          <p>
+            Επιλέξτε την ημέρα και την ώρα που σας εξυπηρετεί παρακάτω ή επικοινωνήστε τηλεφωνικά απευθείας με τον Κωνσταντίνο Τσέλιο.
+          </p>
+          <ul class="quick-details">
+            <li><span>Διεύθυνση</span><strong>Νέα Μαραθώνος 4, Κατερίνη</strong></li>
+            <li><span>Κινητό Ραντεβού</span><a href="tel:+306955330482"><strong>695 533 0482</strong></a></li>
+          </ul>
+          <a href="#booking" class="btn btn-primary" style="width: 100%;">Επιλογή Ημερομηνίας</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Τιμοκατάλογος</span>
+          <h2>Υπηρεσίες Κουρείου</h2>
+          <p>Ξεκάθαρες, προσιτές τιμές για καθημερινό κούρεμα, παραδοσιακό ξύρισμα και φροντίδα γενειάδας.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div>
+              <div class="service-top">
+                <h3>Ανδρικό Κούρεμα</h3>
+                <span class="service-price">10 €</span>
+              </div>
+              <p>Κλασικό ή σύγχρονο ανδρικό κούρεμα με τη φροντίδα ενός έμπειρου κουρέα.</p>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm select-service-cta" data-service="haircut">Επιλογή για Ραντεβού</button>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <div class="service-top">
+                <h3>Παραδοσιακό Ξύρισμα</h3>
+                <span class="service-price">10 €</span>
+              </div>
+              <p>Πλήρες ξύρισμα προσώπου με προσοχή στην επιδερμίδα και καθαρό τελείωμα.</p>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm select-service-cta" data-service="shave">Επιλογή για Ραντεβού</button>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <div class="service-top">
+                <h3>Ξύρισμα Γενειάδας με Μηχανή</h3>
+                <span class="service-price">5 €</span>
+              </div>
+              <p>Σχηματισμός, καθάρισμα και τριμάρισμα γενειάδας με επαγγελματική κουρευτική μηχανή.</p>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm select-service-cta" data-service="beard-machine">Επιλογή για Ραντεβού</button>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <span class="service-tag">Πρόσθετη Επιλογή</span>
+              <div class="service-top">
+                <h3>Χρήση Λεπίδας ή Shaver</h3>
+                <span class="service-price">+2 €</span>
+              </div>
+              <p>Επιπλέον φινίρισμα ακριβείας σε σβέρκο, περιγράμματα ή γενειάδα με λεπίδα ή shaver.</p>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm add-extra-cta" data-extra="blade">Πρόσθεσε στο Ραντεβού</button>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <span class="service-tag">Πρόσθετη Επιλογή</span>
+              <div class="service-top">
+                <h3>Λούσιμο</h3>
+                <span class="service-price">+1 €</span>
+              </div>
+              <p>Αναζωονητικό λούσιμο για καθαρή αίσθηση πριν ή μετά το κούρεμά σας.</p>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm add-extra-cta" data-extra="wash">Πρόσθεσε στο Ραντεβού</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="booking">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Online Κράτηση</span>
+          <h2>Κλείστε Ημερομηνία &amp; Ώρα</h2>
+          <p>
+            Επιλέξτε υπηρεσία, ημέρα και διαθέσιμη ώρα σύμφωνα με το πραγματικό ωράριο του κουρείου. Το σύστημα ελέγχει αυτόματα τις ανοιχτές ώρες.
+          </p>
+        </div>
+
+        <form id="bookingForm" class="booking-shell" novalidate>
+          <div class="booking-panel">
+            <div class="step-title">
+              <span class="step-num">1</span>
+              <span>Επιλογή Υπηρεσίας &amp; Πρόσθετων</span>
+            </div>
+
+            <div class="service-options" role="radiogroup" aria-label="Βασική Υπηρεσία">
+              <label class="radio-card">
+                <span class="radio-card-left">
+                  <input type="radio" name="service" value="haircut" data-label="Ανδρικό Κούρεμα" data-price="10" checked />
+                  <span>
+                    <strong>Ανδρικό Κούρεμα</strong>
+                    <small>Κλασικό ή σύγχρονο κούρεμα</small>
+                  </span>
+                </span>
+                <span class="radio-price">10 €</span>
+              </label>
+
+              <label class="radio-card">
+                <span class="radio-card-left">
+                  <input type="radio" name="service" value="shave" data-label="Παραδοσιακό Ξύρισμα" data-price="10" />
+                  <span>
+                    <strong>Παραδοσιακό Ξύρισμα</strong>
+                    <small>Πλήρης περιποίηση προσώπου</small>
+                  </span>
+                </span>
+                <span class="radio-price">10 €</span>
+              </label>
+
+              <label class="radio-card">
+                <span class="radio-card-left">
+                  <input type="radio" name="service" value="beard-machine" data-label="Ξύρισμα Γενειάδας με Μηχανή" data-price="5" />
+                  <span>
+                    <strong>Ξύρισμα Γενειάδας με Μηχανή</strong>
+                    <small>Σχηματισμός &amp; περιποίηση γενειάδας</small>
+                  </span>
+                </span>
+                <span class="radio-price">5 €</span>
+              </label>
+            </div>
+
+            <div class="extras-group" aria-label="Πρόσθετες Υπηρεσίες">
+              <label class="check-pill">
+                <span>
+                  <input type="checkbox" name="extra" value="wash" data-label="Λούσιμο" data-price="1" />
+                  Λούσιμο
+                </span>
+                <strong>+1 €</strong>
+              </label>
+              <label class="check-pill">
+                <span>
+                  <input type="checkbox" name="extra" value="blade" data-label="Χρήση λεπίδας ή shaver" data-price="2" />
+                  Λεπίδα / Shaver
+                </span>
+                <strong>+2 €</strong>
+              </label>
+            </div>
+
+            <div class="step-title">
+              <span class="step-num">2</span>
+              <span>Επιλογή Ημερομηνίας</span>
+            </div>
+
+            <div class="schedule-switch">
+              <span>Περίοδος απογευματινού ωραρίου:</span>
+              <div class="season-btns" role="group" aria-label="Επιλογή εποχικού ωραρίου">
+                <button type="button" class="season-btn active" data-season="winter">Χειμερινό (17:30–20:30)</button>
+                <button type="button" class="season-btn" data-season="summer">Από 2 Μαΐου (18:00–21:00)</button>
+              </div>
+            </div>
+
+            <div class="calendar-box" aria-label="Ημερολόγιο Επιλογής Ραντεβού">
+              <div class="calendar-nav">
+                <button type="button" class="cal-arrow" id="prevMonthBtn" aria-label="Προηγούμενος μήνας">‹</button>
+                <h3 id="calendarMonthLabel">Μήνας</h3>
+                <button type="button" class="cal-arrow" id="nextMonthBtn" aria-label="Επόμενος μήνας">›</button>
+              </div>
+              <div class="calendar-weekdays" aria-hidden="true">
+                <span>Δε</span><span>Τρ</span><span>Τε</span><span>Πε</span><span>Πα</span><span>Σα</span><span>Κυ</span>
+              </div>
+              <div class="calendar-days" id="calendarDays"></div>
+            </div>
+          </div>
+
+          <div class="booking-panel">
+            <div class="step-title">
+              <span class="step-num">3</span>
+              <span>Επιλογή Ώρας &amp; Στοιχεία Πελάτη</span>
+            </div>
+
+            <div id="slotsContainer">
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+                Επιλέξτε πρώτα μια διαθέσιμη ημερομηνία από το ημερολόγιο για να εμφανιστούν οι ελεύθερες ώρες.
+              </p>
+            </div>
+
+            <div class="form-field">
+              <label for="clientName">Ονοματεπώνυμο *</label>
+              <input type="text" id="clientName" name="clientName" placeholder="π.χ. Γιώργος Παπαδόπουλος" autocomplete="name" required />
+            </div>
+
+            <div class="form-field">
+              <label for="clientPhone">Τηλέφωνο Επικοινωνίας *</label>
+              <input type="tel" id="clientPhone" name="clientPhone" placeholder="π.χ. 69XXXXXXXX" autocomplete="tel" required />
+            </div>
+
+            <div class="form-field">
+              <label for="clientNotes">Σημειώσεις (προαιρετικό)</label>
+              <textarea id="clientNotes" name="clientNotes" rows="2" placeholder="π.χ. Προτίμηση στο κούρεμα ή αν αφορά άλλο μέλος της οικογένειας"></textarea>
+            </div>
+
+            <div class="summary-strip" aria-live="polite">
+              <div class="summary-row">
+                <span>Υπηρεσία:</span>
+                <strong id="sumService">Ανδρικό Κούρεμα</strong>
+              </div>
+              <div class="summary-row">
+                <span>Πρόσθετα:</span>
+                <span id="sumExtras">Κανένα</span>
+              </div>
+              <div class="summary-row">
+                <span>Ημερομηνία &amp; Ώρα:</span>
+                <strong id="sumDateTime">Δεν έχει επιλεγεί</strong>
+              </div>
+              <div class="summary-row total">
+                <span>Εκτιμώμενο Κόστος:</span>
+                <span id="sumTotal">10 €</span>
+              </div>
+            </div>
+
+            <label class="consent-label">
+              <input type="checkbox" id="gdprConsent" required />
+              <span>
+                Συμφωνώ με την επεξεργασία των στοιχείων μου (όνομα, τηλέφωνο, ημερομηνία ραντεβού) αποκλειστικά για την επιβεβαίωση του ραντεβού μου, σύμφωνα με τον ΓΚΠΔ και τον Ν. 4624/2019.
+                <button type="button" class="link-btn" id="openPrivacyFromForm">Πολιτική Απορρήτου</button>
+              </span>
+            </label>
+
+            <div class="form-error" id="formError" role="alert"></div>
+
+            <button type="submit" class="btn btn-primary" id="submitBookingBtn" style="width: 100%;">
+              Καταχώριση Αιτήματος Ραντεβού
+            </button>
+
+            <div class="confirmation-box" id="confirmationBox" role="status" aria-live="polite">
+              <h3 id="confirmationHeading">Το αίτημά σας ετοιμάστηκε!</h3>
+              <p id="confirmationSummaryText"></p>
+              <div class="confirm-actions">
+                <a href="tel:+306955330482" class="btn btn-primary btn-sm">Κλήση στο 695 533 0482</a>
+                <a href="#" id="smsConfirmLink" class="btn btn-outline btn-sm">Αποστολή με SMS</a>
+                <button type="button" id="copySummaryBtn" class="btn btn-outline btn-sm">Αντιγραφή Στοιχείων</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="hours">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Πρόγραμμα</span>
+          <h2>Ωράριο Λειτουργίας</h2>
+          <p>Αναλυτικό χειμερινό ωράριο λειτουργίας και η προσαρμογή των απογευμάτων από 2 Μαΐου.</p>
+        </div>
+
+        <div class="hours-grid">
+          <div class="hours-card">
+            <table class="hours-table" id="hoursTable">
+              <tbody>
+                <tr data-day="1">
+                  <th>Δευτέρα</th>
+                  <td>09:00 – 14:00</td>
+                </tr>
+                <tr data-day="2">
+                  <th>Τρίτη</th>
+                  <td>09:00 – 14:00 &amp; 17:30 – 20:30 <small>(από 2 Μαΐου: 18:00 – 21:00)</small></td>
+                </tr>
+                <tr data-day="3">
+                  <th>Τετάρτη</th>
+                  <td>09:00 – 14:00</td>
+                </tr>
+                <tr data-day="4">
+                  <th>Πέμπτη</th>
+                  <td>09:00 – 14:00 &amp; 17:30 – 20:30 <small>(από 2 Μαΐου: 18:00 – 21:00)</small></td>
+                </tr>
+                <tr data-day="5">
+                  <th>Παρασκευή</th>
+                  <td>09:00 – 14:00 &amp; 17:30 – 20:30 <small>(από 2 Μαΐου: 18:00 – 21:00)</small></td>
+                </tr>
+                <tr data-day="6">
+                  <th>Σάββατο</th>
+                  <td>09:00 – 14:00</td>
+                </tr>
+                <tr data-day="0">
+                  <th>Κυριακή</th>
+                  <td>Κλειστά</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="hours-note">
+              Για ραντεβού χωρίς αναμονή, κλείστε την ώρα σας παραπάνω ή καλέστε στο <strong>695 533 0482</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Εικόνες &amp; Δουλειά</span>
+          <h2>Γκαλερί Κουρείου</h2>
+          <p>
+            Ο χώρος και οι υπηρεσίες μας στην Αγία Παρασκευή Κατερίνης. Για πρόσφατες φωτογραφίες και δημοσιεύσεις, επισκεφθείτε τη σελίδα μας στο Facebook.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <div class="gallery-visual">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#c89b54" stroke-width="1.4" aria-hidden="true">
+                <circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <figcaption class="gallery-caption">
+              <strong>Ανδρικό Κούρεμα</strong>
+              Ακρίβεια με ψαλίδι και μηχανή για κάθε στυλ.
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <div class="gallery-visual">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#c89b54" stroke-width="1.4" aria-hidden="true">
+                <path d="M12 3v18M7 7h10M7 12h10M7 17h10"></path>
+              </svg>
+            </div>
+            <figcaption class="gallery-caption">
+              <strong>Ο Χώρος Μας</strong>
+              Φιλόξενο κουρείο γειτονιάς στη Νέα Μαραθώνος 4.
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <div class="gallery-visual">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#c89b54" stroke-width="1.4" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </div>
+            <figcaption class="gallery-caption">
+              <strong>Ξύρισμα &amp; Γενειάδα</strong>
+              Περιποίηση με μηχανή, λεπίδα ή shaver.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-cta">
+          <p>Θέλετε να δείτε τις φωτογραφίες και τις τελευταίες ενημερώσεις απευθείας από το προφίλ του κουρείου;</p>
+          <a href="https://www.facebook.com/freemenstyle/?locale=el_GR" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+            Μετάβαση στο Facebook (Free Menstyle)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Αξιοπιστία</span>
+          <h2>Τι Λένε οι Πελάτες</h2>
+          <p>Καταγεγραμμένες αξιολογήσεις και σχόλια από τοπικούς καταλόγους και τη σελίδα του καταστήματος.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div>
+              <div class="stars">Σχόλιο Πελάτη</div>
+              <p>«Τέλεια κουρέματα με θέλουν όλες τώρα, θα ξαναέρθω σίγουρα!!!»</p>
+            </div>
+            <span class="review-source">Καταχώριση Maptons</span>
+          </article>
+
+          <article class="review-card">
+            <div>
+              <div class="stars" aria-label="Βαθμολογία 5.0 στα 5">5.0 / 5 ★</div>
+              <p>Άριστη βαθμολογία (5.0 από 2 αξιολογήσεις) με δείκτη προσιτών τιμών ($) για την περιοχή της Κατερίνης.</p>
+            </div>
+            <span class="review-source">Επιχειρηματικός κατάλογος Cybo</span>
+          </article>
+
+          <article class="review-card">
+            <div>
+              <div class="stars">Facebook &amp; Κατάλογοι</div>
+              <p>Ενεργή παρουσία σε Facebook («Tselios Κουρείο», 1 καταγεγραμμένη κριτική), Χρυσό Οδηγό, 11888 και τοπικούς χάρτες της Πιερίας.</p>
+            </div>
+            <span class="review-source">Επίσημη σελίδα freemenstyle</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Πρόσβαση</span>
+          <h2>Πού Θα Μας Βρείτε</h2>
+          <p>Στην περιοχή του Ιερού Ναού Αγίας Παρασκευής στην Κατερίνη, με εύκολη πρόσβαση και ραντεβού χωρίς αναμονή.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Επωνυμία &amp; Κουρέας</span>
+                <span class="contact-value">Tselios Κουρείο — Free Menstyle</span>
+                <span class="contact-sub">Κωνσταντίνος Τσέλιος</span>
+              </li>
+              <li>
+                <span class="contact-label">Διεύθυνση</span>
+                <span class="contact-value">Νέα Μαραθώνος 4, Αγία Παρασκευή</span>
+                <span class="contact-sub">Τ.Κ. 601 32 / 601 00, Κατερίνη Πιερίας (περιοχή Ι.Ν. Αγίας Παρασκευής)</span>
+              </li>
+              <li>
+                <span class="contact-label">Τηλέφωνο</span>
+                <span class="contact-value">
+                  <a href="tel:+306955330482">695 533 0482</a> (Κινητό Ραντεβού)
+                </span>
+              </li>
+              <li>
+                <span class="contact-label">Κοινωνικά Δίκτυα</span>
+                <a class="contact-value" href="https://www.facebook.com/freemenstyle/?locale=el_GR" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">
+                  facebook.com/freemenstyle
+                </a>
+              </li>
+            </ul>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=40.2675898,22.5052790" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+              Οδηγίες Μετάβασης (Google Maps)
+            </a>
+          </div>
+
+          <div class="map-frame-wrap">
+            <iframe
+              title="Χάρτης Τοποθεσίας Tselios Κουρείο στη Νέα Μαραθώνος 4, Κατερίνη"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=22.501279%2C40.264590%2C22.509279%2C40.270590&amp;layer=mapnik&amp;marker=40.2675898%2C22.5052790">
+            </iframe>
+            <div class="map-bar">
+              <span>Συντεταγμένες: 40.2675898, 22.5052790</span>
+              <a href="https://www.openstreetmap.org/?mlat=40.2675898&amp;mlon=22.5052790#map=17/40.26759/22.50528" target="_blank" rel="noopener noreferrer" style="color: var(--gold-light); text-decoration: underline;">
+                Άνοιγμα Μεγάλου Χάρτη
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <span>© <span id="yearSpan">2026</span> Tselios Κουρείο (Free Menstyle) · Νέα Μαραθώνος 4, Κατερίνη</span>
+      <div class="footer-links">
+        <a href="#services">Υπηρεσίες</a>
+        <a href="#booking">Ραντεβού</a>
+        <a href="#hours">Ωράριο</a>
+        <button type="button" class="link-btn" id="openPrivacyFromFooter" style="color: inherit;">Πολιτική Απορρήτου (Ν. 4624/2019)</button>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <h3 id="privacyTitle">Πολιτική Απορρήτου &amp; Προστασία Δεδομένων</h3>
+        <button type="button" class="modal-close" id="closePrivacyBtn" aria-label="Κλείσιμο παραθύρου">✕</button>
+      </div>
+      <p>
+        <strong>Υπεύθυνος Επεξεργασίας:</strong> Tselios Κουρείο (Free Menstyle), Νέα Μαραθώνος 4, Αγία Παρασκευή, Κατερίνη Πιερίας, τηλ. 695 533 0482.
+      </p>
+      <p>
+        <strong>Σκοπός &amp; Νομική Βάση:</strong> Τα στοιχεία που καταχωρίζετε στη φόρμα ραντεβού (ονοματεπώνυμο, τηλέφωνο επικοινωνίας, επιλεγμένη υπηρεσία, ημερομηνία, ώρα και προαιρετικές σημειώσεις) συλλέγονται αποκλειστικά με τη ρητή συγκατάθεσή σας σύμφωνα με τον Γενικό Κανονισμό για την Προστασία Δεδομένων (ΕΕ 2016/679 – ΓΚΠΔ) και τον ελληνικό Νόμο 4624/2019, με μοναδικό σκοπό τον προγραμματισμό, την επιβεβαίωση ή την τροποποίηση του ραντεβού σας.
+      </p>
+      <p>
+        <strong>Διατήρηση &amp; Κοινοποίηση:</strong> Τα δεδομένα σας δεν διαβιβάζονται σε τρίτους για εμπορικούς ή διαφημιστικούς σκοπούς και διαγράφονται μόλις ολοκληρωθεί η εξυπηρέτησή σας και δεν υφίσταται πλέον σκοπός τήρησής τους.
+      </p>
+      <p>
+        <strong>Τα Δικαιώματά σας:</strong> Διατηρείτε ανά πάσα στιγμή το δικαίωμα πρόσβασης, διόρθωσης, διαγραφής ή εύκολης ανάκλησης της συγκατάθεσής σας, επικοινωνώντας απευθείας στο τηλέφωνο <strong>695 533 0482</strong>.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      const FORMSPREE_ENDPOINT = '';
+
+      const MONTH_NAMES_EL = [
+        'Ιανουάριος', 'Φεβρουάριος', 'Μάρτιος', 'Απρίλιος', 'Μάιος', 'Ιούνιος',
+        'Ιούλιος', 'Αύγουστος', 'Σεπτέμβριος', 'Οκτώβριος', 'Νοέμβριος', 'Δεκέμβριος'
+      ];
+
+      const DAY_NAMES_EL = [
+        'Κυριακή', 'Δευτέρα', 'Τρίτη', 'Τετάρτη', 'Πέμπτη', 'Παρασκευή', 'Σάββατο'
+      ];
+
+      function getAthensNow() {
+        const now = new Date();
+        const parts = new Intl.DateTimeFormat('en-GB', {
+          timeZone: 'Europe/Athens',
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        }).formatToParts(now);
+
+        const map = {};
+        parts.forEach(function (p) { map[p.type] = p.value; });
+
+        const y = parseInt(map.year, 10);
+        const m = parseInt(map.month, 10) - 1;
+        const d = parseInt(map.day, 10);
+        const hh = parseInt(map.hour === '24' ? '0' : map.hour, 10);
+        const mm = parseInt(map.minute, 10);
+
+        const localDate = new Date(y, m, d);
+        return {
+          year: y,
+          month: m,
+          day: d,
+          weekday: localDate.getDay(),
+          minutesNow: hh * 60 + mm,
+          dateKey: formatDateKey(y, m, d)
+        };
+      }
+
+      function formatDateKey(y, m, d) {
+        return y + '-' + String(m + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0');
+      }
+
+      function toMinutes(timeStr) {
+        const parts = timeStr.split(':');
+        return parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
+      }
+
+      function getSlotsForDay(weekday, seasonMode) {
+        if (weekday === 0) {
+          return { morning: [], afternoon: [] };
+        }
+        const morningSlots = ['09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30', '13:00', '13:30'];
+        if (weekday === 1 || weekday === 3 || weekday === 6) {
+          return {
+            morning: morningSlots,
+            afternoon: []
+          };
+        }
+        return {
+          morning: morningSlots,
+          afternoon: seasonMode === 'summer'
+            ? ['18:00', '18:30', '19:00', '19:30', '20:00', '20:30']
+            : ['17:30', '18:00', '18:30', '19:00', '19:30', '20:00']
+        };
+      }
+
+      const athens = getAthensNow();
+
+      const state = {
+        viewYear: athens.year,
+        viewMonth: athens.month,
+        selectedDateKey: null,
+        selectedDateObj: null,
+        selectedTime: null,
+        seasonMode: 'winter'
+      };
+
+      function updateLiveStatus() {
+        const pill = document.getElementById('liveStatusPill');
+        const txt = document.getElementById('liveStatusText');
+        const wd = athens.weekday;
+        const mins = athens.minutesNow;
+        let isOpen = false;
+        let note = '';
+
+        if (wd === 1 || wd === 3) {
+          isOpen = mins >= 540 && mins < 840;
+          note = isOpen
+            ? 'Ανοιχτά τώρα · Έως 14:00'
+            : 'Κλειστά τώρα · Δευτέρα & Τετάρτη 09:00 – 14:00';
+        } else if (wd === 2 || wd === 4 || wd === 5) {
+          const morningOpen = mins >= 540 && mins < 840;
+          const afternoonOpen = state.seasonMode === 'summer'
+            ? (mins >= 1080 && mins < 1260)
+            : (mins >= 1050 && mins < 1230);
+          isOpen = morningOpen || afternoonOpen;
+          if (morningOpen) {
+            note = 'Ανοιχτά τώρα · Πρωινό ωράριο έως 14:00';
+          } else if (afternoonOpen) {
+            note = state.seasonMode === 'summer'
+              ? 'Ανοιχτά τώρα · Απογευματινό ωράριο έως 21:00'
+              : 'Ανοιχτά τώρα · Απογευματινό ωράριο έως 20:30';
+          } else {
+            note = state.seasonMode === 'summer'
+              ? 'Κλειστά τώρα · Απογευματινό ωράριο 09:00–14:00 & 18:00–21:00'
+              : 'Κλειστά τώρα · Χειμερινό ωράριο 09:00–14:00 & 17:30–20:30';
+          }
+        } else if (wd === 6) {
+          isOpen = mins >= 540 && mins < 840;
+          note = isOpen ? 'Ανοιχτά τώρα · Σάββατο έως 14:00' : 'Κλειστά τώρα · Σάββατο 09:00 – 14:00';
+        } else {
+          isOpen = false;
+          note = 'Κλειστά σήμερα (Κυριακή) · Κλείστε ραντεβού για την εβδομάδα';
+        }
+
+        pill.classList.toggle('is-open', isOpen);
+        pill.classList.toggle('is-closed', !isOpen);
+        txt.textContent = note;
+
+        document.querySelectorAll('#hoursTable tr').forEach(function (tr) {
+          tr.classList.toggle('is-today', parseInt(tr.dataset.day, 10) === wd);
+        });
+      }
+
+      function getSelectedPricing() {
+        const checkedService = document.querySelector('input[name="service"]:checked');
+        const basePrice = parseFloat(checkedService.dataset.price);
+        const baseLabel = checkedService.dataset.label;
+        const serviceVal = checkedService.value;
+
+        const extras = [];
+        let extrasTotal = 0;
+        document.querySelectorAll('input[name="extra"]:checked').forEach(function (cb) {
+          extras.push(cb.dataset.label + ' (+' + cb.dataset.price + ' €)');
+          extrasTotal += parseFloat(cb.dataset.price);
+        });
+
+        return {
+          serviceVal: serviceVal,
+          baseLabel: baseLabel,
+          extrasLabels: extras,
+          total: basePrice + extrasTotal
+        };
+      }
+
+      function updateSummary() {
+        const pricing = getSelectedPricing();
+        document.getElementById('sumService').textContent = pricing.baseLabel;
+        document.getElementById('sumExtras').textContent = pricing.extrasLabels.length
+          ? pricing.extrasLabels.join(', ')
+          : 'Κανένα';
+        document.getElementById('sumTotal').textContent = pricing.total + ' €';
+
+        if (state.selectedDateObj && state.selectedTime) {
+          const d = state.selectedDateObj;
+          const dateFormatted = DAY_NAMES_EL[d.getDay()] + ', ' + d.getDate() + ' ' + MONTH_NAMES_EL[d.getMonth()] + ' ' + d.getFullYear();
+          document.getElementById('sumDateTime').textContent = dateFormatted + ' · ' + state.selectedTime;
+        } else if (state.selectedDateObj) {
+          const d = state.selectedDateObj;
+          const dateFormatted = DAY_NAMES_EL[d.getDay()] + ', ' + d.getDate() + ' ' + MONTH_NAMES_EL[d.getMonth()];
+          document.getElementById('sumDateTime').textContent = dateFormatted + ' (επιλέξτε ώρα)';
+        } else {
+          document.getElementById('sumDateTime').textContent = 'Δεν έχει επιλεγεί';
+        }
+      }
+
+      function renderCalendar() {
+        const year = state.viewYear;
+        const month = state.viewMonth;
+        document.getElementById('calendarMonthLabel').textContent = MONTH_NAMES_EL[month] + ' ' + year;
+        document.getElementById('prevMonthBtn').disabled = (year === athens.year && month === athens.month);
+
+        const daysGrid = document.getElementById('calendarDays');
+        daysGrid.innerHTML = '';
+
+        const firstDay = new Date(year, month, 1).getDay();
+        const mondayOffset = (firstDay + 6) % 7;
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+        for (let i = 0; i < mondayOffset; i++) {
+          const empty = document.createElement('span');
+          empty.className = 'cal-day-empty';
+          daysGrid.appendChild(empty);
+        }
+
+        const todayMidnight = new Date(athens.year, athens.month, athens.day).getTime();
+
+        for (let day = 1; day <= daysInMonth; day++) {
+          const dateObj = new Date(year, month, day);
+          const weekday = dateObj.getDay();
+          const key = formatDateKey(year, month, day);
+          const isPast = dateObj.getTime() < todayMidnight;
+          const isSunday = weekday === 0;
+
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'cal-day';
+          btn.textContent = String(day);
+
+          if (key === athens.dateKey) {
+            btn.classList.add('is-today');
+          }
+          if (state.selectedDateKey === key) {
+            btn.classList.add('is-selected');
+          }
+
+          if (isPast || isSunday) {
+            btn.disabled = true;
+            if (isSunday) btn.title = 'Κυριακή · Κλειστά';
+          } else {
+            btn.addEventListener('click', function () {
+              state.selectedDateKey = key;
+              state.selectedDateObj = dateObj;
+              state.selectedTime = null;
+              renderCalendar();
+              renderSlots();
+              updateSummary();
+            });
+          }
+
+          daysGrid.appendChild(btn);
+        }
+      }
+
+      function renderSlots() {
+        const container = document.getElementById('slotsContainer');
+        if (!state.selectedDateObj) {
+          container.innerHTML = '<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Επιλέξτε πρώτα μια διαθέσιμη ημερομηνία από το ημερολόγιο για να εμφανιστούν οι ελεύθερες ώρες.</p>';
+          return;
+        }
+
+        const weekday = state.selectedDateObj.getDay();
+        const slots = getSlotsForDay(weekday, state.seasonMode);
+        const isToday = state.selectedDateKey === athens.dateKey;
+
+        container.innerHTML = '';
+
+        function appendSlotSection(title, list) {
+          if (!list.length) return;
+          const lbl = document.createElement('div');
+          lbl.className = 'slot-group-label';
+          lbl.textContent = title;
+          container.appendChild(lbl);
+
+          const grid = document.createElement('div');
+          grid.className = 'slots-grid';
+
+          list.forEach(function (timeStr) {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'slot-btn';
+            btn.textContent = timeStr;
+
+            const passedToday = isToday && toMinutes(timeStr) <= athens.minutesNow + 15;
+            if (passedToday) {
+              btn.disabled = true;
+              btn.title = 'Η ώρα έχει παρέλθει για σήμερα';
+            }
+
+            if (state.selectedTime === timeStr && !passedToday) {
+              btn.classList.add('is-selected');
+            }
+
+            btn.addEventListener('click', function () {
+              state.selectedTime = timeStr;
+              renderSlots();
+              updateSummary();
+            });
+
+            grid.appendChild(btn);
+          });
+
+          container.appendChild(grid);
+        }
+
+        appendSlotSection('Πρωινές Ώρες', slots.morning);
+        appendSlotSection(
+          state.seasonMode === 'summer' ? 'Απογευματινές Ώρες (Από 2 Μαΐου)' : 'Απογευματινές Ώρες (Χειμερινό)',
+          slots.afternoon
+        );
+
+        const hasEnabled = container.querySelectorAll('.slot-btn:not(:disabled)').length > 0;
+        if (!hasEnabled) {
+          const msg = document.createElement('p');
+          msg.style.cssText = 'font-size:0.88rem; color:#f3a6a6; margin-bottom:1rem;';
+          msg.textContent = 'Δεν απομένουν διαθέσιμες ώρες για σήμερα. Επιλέξτε επόμενη ημερομηνία από το ημερολόγιο.';
+          container.appendChild(msg);
+        }
+      }
+
+      document.getElementById('prevMonthBtn').addEventListener('click', function () {
+        if (state.viewYear === athens.year && state.viewMonth === athens.month) return;
+        state.viewMonth--;
+        if (state.viewMonth < 0) {
+          state.viewMonth = 11;
+          state.viewYear--;
+        }
+        renderCalendar();
+      });
+
+      document.getElementById('nextMonthBtn').addEventListener('click', function () {
+        state.viewMonth++;
+        if (state.viewMonth > 11) {
+          state.viewMonth = 0;
+          state.viewYear++;
+        }
+        renderCalendar();
+      });
+
+      document.querySelectorAll('.season-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.season-btn').forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          state.seasonMode = btn.dataset.season;
+          state.selectedTime = null;
+          renderSlots();
+          updateSummary();
+          updateLiveStatus();
+        });
+      });
+
+      document.querySelectorAll('input[name="service"]').forEach(function (radio) {
+        radio.addEventListener('change', updateSummary);
+      });
+
+      document.querySelectorAll('input[name="extra"]').forEach(function (cb) {
+        cb.addEventListener('change', updateSummary);
+      });
+
+      document.querySelectorAll('.select-service-cta').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const target = document.querySelector('input[name="service"][value="' + btn.dataset.service + '"]');
+          if (target) {
+            target.checked = true;
+            target.dispatchEvent(new Event('change'));
+          }
+          document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+
+      document.querySelectorAll('.add-extra-cta').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const target = document.querySelector('input[name="extra"][value="' + btn.dataset.extra + '"]');
+          if (target) {
+            target.checked = true;
+            updateSummary();
+          }
+          document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+
+      const bookingForm = document.getElementById('bookingForm');
+      const formError = document.getElementById('formError');
+      const confirmationBox = document.getElementById('confirmationBox');
+      const confirmationHeading = document.getElementById('confirmationHeading');
+
+      bookingForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        formError.classList.remove('visible');
+        confirmationBox.classList.remove('visible', 'is-fallback');
+
+        const name = document.getElementById('clientName').value.trim();
+        const phone = document.getElementById('clientPhone').value.trim();
+        const notes = document.getElementById('clientNotes').value.trim();
+        const consent = document.getElementById('gdprConsent').checked;
+
+        const errors = [];
+        if (!state.selectedDateObj) errors.push('Επιλέξτε ημερομηνία από το ημερολόγιο.');
+        if (!state.selectedTime) errors.push('Επιλέξτε διαθέσιμη ώρα.');
+        if (name.length < 2) errors.push('Συμπληρώστε το ονοματεπώνυμό σας.');
+        if (phone.replace(/\D/g, '').length < 10) errors.push('Εισάγετε έγκυρο τηλέφωνο επικοινωνίας (τουλάχιστον 10 ψηφία).');
+        if (!consent) errors.push('Απαιτείται αποδοχή της ενημέρωσης προστασίας προσωπικών δεδομένων (Ν. 4624/2019).');
+
+        if (errors.length) {
+          formError.textContent = errors.join(' ');
+          formError.classList.add('visible');
+          return;
+        }
+
+        const pricing = getSelectedPricing();
+        const d = state.selectedDateObj;
+        const dateFormatted = DAY_NAMES_EL[d.getDay()] + ', ' + d.getDate() + ' ' + MONTH_NAMES_EL[d.getMonth()] + ' ' + d.getFullYear();
+
+        const summaryMessage =
+          'Αίτημα Ραντεβού – Tselios Κουρείο (Free Menstyle)\n' +
+          'Όνομα: ' + name + '\n' +
+          'Τηλέφωνο: ' + phone + '\n' +
+          'Υπηρεσία: ' + pricing.baseLabel + (pricing.extrasLabels.length ? ' + ' + pricing.extrasLabels.join(', ') : '') + '\n' +
+          'Ημερομηνία & Ώρα: ' + dateFormatted + ' στις ' + state.selectedTime + '\n' +
+          'Εκτιμώμενο Κόστος: ' + pricing.total + ' €' +
+          (notes ? '\nΣημειώσεις: ' + notes : '');
+
+        let remoteFailed = false;
+
+        if (FORMSPREE_ENDPOINT) {
+          const submitBtn = document.getElementById('submitBookingBtn');
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Αποστολή αιτήματος...';
+          try {
+            const response = await fetch(FORMSPREE_ENDPOINT, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+              body: JSON.stringify({
+                Ονοματεπώνυμο: name,
+                Τηλέφωνο: phone,
+                Υπηρεσία: pricing.baseLabel,
+                Πρόσθετα: pricing.extrasLabels.join(', ') || 'Κανένα',
+                Ημερομηνία: dateFormatted,
+                Ώρα: state.selectedTime,
+                Εκτιμώμενο_Κόστος: pricing.total + ' €',
+                Σημειώσεις: notes
+              })
+            });
+            if (!response.ok) throw new Error('HTTP ' + response.status);
+          } catch (err) {
+            remoteFailed = true;
+            formError.textContent = 'Δεν κατέστη δυνατή η αυτόματη ηλεκτρονική αποστολή. Επιβεβαιώστε άμεσα το ραντεβού σας με SMS ή καλώντας στο 695 533 0482.';
+            formError.classList.add('visible');
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Καταχώριση Αιτήματος Ραντεβού';
+          }
+        }
+
+        if (remoteFailed) {
+          confirmationBox.classList.add('is-fallback');
+          confirmationHeading.textContent = 'Ολοκλήρωση μέσω SMS ή Τηλεφώνου';
+        } else {
+          confirmationHeading.textContent = FORMSPREE_ENDPOINT
+            ? 'Το αίτημά σας στάλθηκε!'
+            : 'Το αίτημά σας ετοιμάστηκε!';
+        }
+
+        document.getElementById('confirmationSummaryText').textContent =
+          name + ', η επιλογή σας για ' + pricing.baseLabel + ' στις ' + dateFormatted + ' (' + state.selectedTime + ', εκτιμώμενο κόστος ' + pricing.total + ' €) είναι έτοιμη. Για οριστική επιβεβαίωση χωρίς αναμονή, στείλτε το μήνυμα με SMS ή καλέστε στο 695 533 0482.';
+
+        document.getElementById('smsConfirmLink').href = 'sms:+306955330482?body=' + encodeURIComponent(summaryMessage);
+
+        const copyBtn = document.getElementById('copySummaryBtn');
+        copyBtn.onclick = function () {
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(summaryMessage).then(function () {
+              copyBtn.textContent = 'Αντιγράφηκε!';
+              setTimeout(function () { copyBtn.textContent = 'Αντιγραφή Στοιχείων'; }, 2200);
+            });
+          }
+        };
+
+        confirmationBox.classList.add('visible');
+        confirmationBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+
+      const navToggle = document.getElementById('navToggle');
+      const primaryNav = document.getElementById('primaryNav');
+      navToggle.addEventListener('click', function () {
+        const isOpen = primaryNav.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+      primaryNav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          primaryNav.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      const privacyModal = document.getElementById('privacyModal');
+      function openModal() { privacyModal.classList.add('open'); }
+      function closeModal() { privacyModal.classList.remove('open'); }
+
+      document.getElementById('openPrivacyFromForm').addEventListener('click', openModal);
+      document.getElementById('openPrivacyFromFooter').addEventListener('click', openModal);
+      document.getElementById('closePrivacyBtn').addEventListener('click', closeModal);
+      privacyModal.addEventListener('click', function (e) {
+        if (e.target === privacyModal) closeModal();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeModal();
+      });
+
+      document.getElementById('yearSpan').textContent = String(athens.year);
+      updateLiveStatus();
+      renderCalendar();
+      renderSlots();
+      updateSummary();
+    })();
+  </script>
+</body>
+</html>
